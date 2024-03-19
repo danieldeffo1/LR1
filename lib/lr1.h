@@ -1,5 +1,9 @@
 #pragma once
-
+#include <string>
 #include <vector>
+using namespace std;
 
-std::pair<int, int> countAndSum(const std::vector<int>& array);
+extern std::vector<int> indexErrors;
+extern int indNumCond;
+extern float numCond;
+vector<float> fun(string nameFile); onst std::vector<int>& array);

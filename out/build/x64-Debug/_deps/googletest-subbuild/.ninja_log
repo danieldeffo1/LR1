@@ -1,0 +1,21 @@
+# ninja log v5
+1	36	7325794188033553	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	65385dc4fe756e3b
+1	36	7325794188033553	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	65385dc4fe756e3b
+36	7836	7325794266075925	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	81449986960b9766
+36	7836	7325794266075925	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	81449986960b9766
+7837	7921	0	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	6f8518d6c6f3f80e
+7837	7921	0	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	6f8518d6c6f3f80e
+7922	7954	7325794267325912	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	87ed9fcd45fafb36
+7922	7954	7325794267325912	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	87ed9fcd45fafb36
+7954	7988	7325794267638399	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	f29f4e9b461a5b71
+7954	7988	7325794267638399	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	f29f4e9b461a5b71
+7988	8021	7325794267950911	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	a6f6fff4a57a525b
+7988	8021	7325794267950911	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	a6f6fff4a57a525b
+8021	8054	7325794268263436	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	d13f371f6b78c5ae
+8021	8054	7325794268263436	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	d13f371f6b78c5ae
+8054	8086	7325794268575901	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	82080fcbf67e11dd
+8054	8086	7325794268575901	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	82080fcbf67e11dd
+8086	8131	7325794269044680	CMakeFiles/googletest-populate-complete	1d12da2fbb75824a
+8086	8131	7325794269044680	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	1d12da2fbb75824a
+8086	8131	7325794269044680	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	1d12da2fbb75824a
+8086	8131	7325794269044680	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	1d12da2fbb75824a
