@@ -23,6 +23,12 @@ protected:
     void SetUp() override {
         // Например, инициализация данных
         //arr = {10, 14, 15, 20, 21, 25, 30};
+        string nameFile = "standard.txt";
+        ifstream input(nameFile);
+        float ch;
+        while (input >> ch) {
+            arr_standart.push_back(ch);
+        }
     }
 
     // Здесь вы можете освободить ресурсы, если это необходимо
@@ -35,29 +41,30 @@ protected:
     // Объявляем переменные, которые будут использоваться в тестах
     std::string nameFile;
     std::vector<float> result;
+    std::vector<float> arr_standart;
 };
 
 // Пример теста1
 TEST_F(CountAndSumTest, CTest1) {
-    nameFile = "123.txt";
+    nameFile = "initial.txt";
     // Вызываем функцию countAndSum с тестовыми данными
     result = fun(nameFile);
-    vector<float> arr = { -8, -27, 5, 10, -64 };
     //Добавить файл с ожидаемыми данными
 // Проверяем ожидаемые результаты
-    EXPECT_EQ(result, arr);
-    EXPECT_EQ(result, arr);
+    EXPECT_EQ(result, arr_standart);
+    EXPECT_EQ(result, arr_standart);
 }
 
 // Пример теста 2
-//TEST_F(CountAndSumTest, CTest2) {
-//// Вызываем функцию countAndSum с тестовыми данными
-//    result = fun(nameFile);
-//
-//// Проверяем ожидаемые результаты
-//    EXPECT_EQ(result.first, 15);
-//    EXPECT_EQ(result.second, 100);
-//}
+TEST_F(CountAndSumTest, CTest2) {
+// Вызываем функцию countAndSum с тестовыми данными
+    nameFile = "initial.txt";
+    result = fun(nameFile);
+
+// Проверяем ожидаемые результаты
+    EXPECT_EQ(result, arr_standart);
+    EXPECT_EQ(result, arr_standart);
+}
 //
 //// Пример теста3
 //TEST(CountAndSumTest1, CTest3) {

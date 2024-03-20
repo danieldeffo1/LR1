@@ -16,7 +16,7 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "ru-RU");
-    string nameFile = "123.txt";
+    string nameFile = "initial.txt";
     vector<float> arr = fun(nameFile);
     string errrosMessage[3] = { " оличество чисел в массиве > 1024", "„исло возведенное в куб на выходит за границы тип float" };
 
