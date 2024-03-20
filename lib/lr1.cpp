@@ -16,15 +16,14 @@ float numCond;
 
 vector<float> fun(string nameFile) {
 
-    ifstream input(nameFile);
+    
     vector<float> arr;
     //float min = -0.00000000000000000000000000000000654321; // 6 значащих цифр
     //float max = -654321.346f; // 6 значащих цифр
 
 
-
     int countNums = 0;
-
+    ifstream input(nameFile);
     float ch;
     bool flagErr1 = 0;
     while (input >> ch) {

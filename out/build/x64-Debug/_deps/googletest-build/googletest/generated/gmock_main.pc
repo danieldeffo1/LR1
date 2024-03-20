@@ -1,5 +1,5 @@
-libdir=C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/install/x64-Debug/lib
-includedir=C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/install/x64-Debug/include
+libdir=C:/Users/hp/Downloads/LR1/out/install/x64-Debug/lib
+includedir=C:/Users/hp/Downloads/LR1/out/install/x64-Debug/include
 
 Name: gmock_main
 Description: GoogleMock (with main() function)

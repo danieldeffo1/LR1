@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/qwer7/OneDrive/Рабочий стол/LR1/bin
+# Install script for directory: C:/Users/hp/Downloads/LR1/bin
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/hp/Downloads/LR1/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

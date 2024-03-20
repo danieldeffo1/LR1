@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-src
+# Install script for directory: C:/Users/hp/Downloads/LR1/out/build/x64-Debug/_deps/googletest-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/install/x64-Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/hp/Downloads/LR1/out/install/x64-Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/_deps/googletest-build/googlemock/cmake_install.cmake")
+  include("C:/Users/hp/Downloads/LR1/out/build/x64-Debug/_deps/googletest-build/googlemock/cmake_install.cmake")
 
 endif()
 
