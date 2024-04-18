@@ -1,6 +1,6 @@
 {
   "OutputFoldersPerTargetSystem": {
-    "\u041B\u043E\u043A\u0430\u043B\u044C\u043D\u044B\u0439 \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440": [
+    "Локальный компьютер": [
       "out\\build\\x64-Debug",
       "out\\install\\x64-Debug"
     ]
@@ -13,6 +13,6 @@
     "\\out\\build",
     "\\tests"
   ],
-  "SelectedNode": "\\tests\\lr1_test.cpp",
+  "SelectedNode": "\\bin\\main.cpp",
   "PreviewInSolutionExplorer": false
 }

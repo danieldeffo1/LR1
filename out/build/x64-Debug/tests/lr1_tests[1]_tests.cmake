@@ -1,5 +1,0 @@
-add_test([=[CountAndSumTest.CTest1]=]  C:/Users/hp/Downloads/LR1/out/build/x64-Debug/tests/lr1_tests.exe [==[--gtest_filter=CountAndSumTest.CTest1]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[CountAndSumTest.CTest1]=]  PROPERTIES WORKING_DIRECTORY C:/Users/hp/Downloads/LR1/out/build/x64-Debug/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test([=[CountAndSumTest.CTest2]=]  C:/Users/hp/Downloads/LR1/out/build/x64-Debug/tests/lr1_tests.exe [==[--gtest_filter=CountAndSumTest.CTest2]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[CountAndSumTest.CTest2]=]  PROPERTIES WORKING_DIRECTORY C:/Users/hp/Downloads/LR1/out/build/x64-Debug/tests SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  lr1_tests_TESTS CountAndSumTest.CTest1 CountAndSumTest.CTest2)
