@@ -1,0 +1,20 @@
+# ninja log v5
+3	1065	7351328756533674	lib/CMakeFiles/lr1_lib.dir/lr1.cpp.obj	d93234bb9267458
+6	1072	7351328756553692	bin/CMakeFiles/LR1.dir/main.cpp.obj	f19e89181e519e99
+1066	1123	7351328757043663	lib/lr1_lib.lib	30c1a3dfc100fde7
+29	1397	7351328759813678	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj	9a2baba71b0bbed0
+1123	1423	7351328759903668	bin/LR1.exe	61a3c26450a51298
+8	1510	7351328760973698	tests/CMakeFiles/lr1_tests.dir/lr1_test.cpp.obj	883cbd6fcff140be
+23	1539	7351328761283658	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.obj	bcea02e0d2e15b18
+14	1935	7351328765233712	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.obj	bd58a661902a455d
+20	1954	7351328765413656	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock-all.cc.obj	4050f61b46ab340
+26	2445	7351328770323665	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.obj	adc9b6ae43987665
+17	2451	7351328770373663	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/__/googletest/src/gtest-all.cc.obj	fcb8ae649e4c9452
+2445	2501	7351328770813679	lib/gtest.lib	b84f56db58e20cdf
+2451	2508	7351328770873666	lib/gmock_main.lib	41a6c3436b0e1307
+2501	2528	7351328771173656	lib/gtest_main.lib	7c3ef7325e19b7e4
+11	2533	7351328771203656	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/__/googletest/src/gtest-all.cc.obj	e5ba9d3ead9e1836
+2533	2584	7351328771683657	lib/gmock.lib	86f5897afdca1acf
+2528	2853	7351328774440427	tests/lr1_tests.exe	129453f80a80db0a
+2528	2853	7351328774440427	tests/lr1_tests[1]_tests.cmake	129453f80a80db0a
+2528	2853	7351328774440427	C:/Users/qwer7/OneDrive/Рабочий стол/LR1/out/build/x64-Debug/tests/lr1_tests[1]_tests.cmake	129453f80a80db0a

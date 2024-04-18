@@ -10,46 +10,88 @@
 using namespace std;
 
 
-std::vector<int> indexErrors;
-int indNumCond;
-float numCond;
+std::string processNumber(const std::string& s) {
+    std::string result;
+    int firstNonZeroDigitIndex = -1;
+    int endNonZeroDigitIndex = -1;
+    int digitCount = 0;
 
-vector<float> fun(string nameFile) {
-
-    
-    vector<float> arr;
-    //float min = -0.00000000000000000000000000000000654321; // 6 значащих цифр
-    //float max = -654321.346f; // 6 значащих цифр
-
-
-    int countNums = 0;
-    ifstream input(nameFile);
-    float ch;
-    bool flagErr1 = 0;
-    while (input >> ch) {
-        ch = floor(ch * 10000000.0) / 10000000.0; //оставляем 7 цифр после запятой
-        countNums++;
-        if (countNums == 1024) indexErrors.push_back(0); //"Количество чисел в массиве > 1024"
-        arr.push_back(ch);
-    }
-
-    for (int i = 0; i < arr.size(); i++) {
-        if (arr[i] < -1) {
-            indNumCond = i;
-            numCond = arr[i];
-            bool flagErr = 0;
-            for (int i = 0; i < arr.size(); i++) {
-                if (arr[i] < 0) {
-                    arr[i] = pow(arr[i], 3);
-                    if (!flagErr && (abs(arr[i]) > numeric_limits<float>::max() || //float max is 3.40282e+38 
-                        abs(arr[i]) < numeric_limits<float>::min())) { // float min is 1.17549e-38
-                        indexErrors.push_back(1);
-                        flagErr = 1;
-                    }
-                }
-            }
+    for (int i = 0; i < s.size(); ++i) {
+        if (isdigit(s[i]) && s[i] != '0') {
+            firstNonZeroDigitIndex = i;
             break;
         }
     }
-    return arr;
+
+    for (int i = 0; i < s.size(); ++i) {
+        if (i < firstNonZeroDigitIndex && s[i] != '.' && s[i] != '-') {
+            result += '0';
+        }
+        else if (isdigit(s[i]) && digitCount < 7) {
+            result += s[i];
+            digitCount++;
+        }
+        else if (s[i] == '.') {
+            result += '.';
+        }
+        else {
+            if (s[i] == '-')
+                result += '-';
+            else
+                result += '0';
+        }
+    }
+
+    return result;
+}
+
+
+vector<float> fun(string nameFile) {
+
+
+    vector<float> arr = {};
+    vector<float> res_arr = {};
+    int countNums = 0;
+    bool flag_id_arr = true;
+    ifstream input(nameFile);
+    string str_ch;
+    float ch;
+
+    while (input >> str_ch) {
+        //ch = floor(ch * 10000000.0) / 10000000.0; //оставляем 6 цифр (отсекаем остальное)
+        ch = stof(processNumber(str_ch));
+        std::string input = std::to_string(ch);
+        ch = stof(processNumber(input));
+        countNums++;
+        if (countNums == 1024) {
+            res_arr.push_back(666); //"Количество чисел в массиве > 1024"
+            arr = {};
+            break;
+        }
+        if (flag_id_arr && ch < -1) {
+            res_arr.push_back(countNums - 1);// индекс массива, удовлетворяющий условию
+            res_arr.push_back(ch);// элемент массива, удовлетворяющий условию
+            flag_id_arr = false;
+        }
+        arr.push_back(ch);
+    }
+
+
+    for (int i = 0; i < arr.size(); i++) {
+
+        if (!flag_id_arr && arr[i] < 0) {
+            float n = pow(arr[i], 3);
+            std::string input = std::to_string(n);
+            float ch1 = stof(processNumber(input));
+            res_arr.push_back(ch1);
+        }
+        else
+        {
+            res_arr.push_back(arr[i]);
+        }
+
+    }
+
+
+    return res_arr;
 }

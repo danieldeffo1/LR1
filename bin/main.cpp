@@ -15,21 +15,33 @@ using namespace std;
 
 
 int main() {
-    setlocale(LC_ALL, "ru-RU");
-    string nameFile = "initial.txt";
-    vector<float> arr = fun(nameFile);
-    string errrosMessage[3] = { " оличество чисел в массиве > 1024", "„исло возведенное в куб на выходит за границы тип float" };
 
-    cout << "»ндекс удовлетвор€ющий условию: " << indNumCond << endl;
-    cout << "Ёлемент массива удовлетвор€ющий условию: " << numCond << endl;
-    for (int i = 0; i < arr.size(); i++) {
-        cout << (arr[i]) << "  ";
+
+    vector<float> data1;
+
+    data1 = fun("test1.txt");
+
+    vector<float> data2;
+    ifstream file("standard1.txt");
+    float value;
+    while (file >> value) {
+        data2.push_back(value);
+    }
+
+    for (int i = 0; i < data1.size(); i++)
+    {
+        std::cout << std::fixed << std::setprecision(20);
+        cout << data1[i] << endl;
+        cout << data2[i] << endl;
+        if (data1[i] == data2[i]) {
+            cout << "da" << endl;
+        }
+        else
+        {
+            cout << "net" << endl;
+        }
     }
 
 
-    if (indexErrors.size())cout << "\nћассив ошибок:\n";
-    for (int i : indexErrors) {
-        cout << errrosMessage[i] << endl;
-    }
     return 0;
 }
