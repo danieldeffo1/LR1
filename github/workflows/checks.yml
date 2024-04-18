@@ -2,9 +2,9 @@ name: Code checks
 
 on:
   push:
-    branches: [main, new]
+    branches: [ new ]
   pull_request:
-    branches: [main, new]
+    branches: [ new ]
 
 jobs:
   build:
